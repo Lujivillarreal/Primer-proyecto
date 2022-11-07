@@ -11,20 +11,20 @@
 
 #main-recurces
 MARCA = "CANNON", "PIERO", "SIMMONS", "KING KOIL",  "INDUCOL", "SERTA", "BEDTIME", "TELGO", "SEALY", "SUAVESTAR"
-MEDIDAS ="1 PLAZA ", "1 PLZA ½", "2 PLAZAS ","PLAZAS ½"
+MEDIDAS ="1 PLAZA ", "1 PLZA ½", "2 PLAZAS "," 2 PLAZAS ½"
 TIPO = "RESORTES", "ESPUMA"
 CANTIDAD = "700-10.000", "10.000 A 15.000", "MAS DE 15.000"
 PRECIO = "40.000 A 70.000", "70.000 A 100.000", "MAS DE 100.000"
 
 #index
 MARCA = input('ingrese marca')
-print ('usted quiere, ' + marca)
+print ('usted quiere, ' + MARCA)
 MEDIDAS= input('ingrese medidas')
-print ('usted quiere, ' + medidas)
+print ('usted quiere, ' + MEDIDAS)
 TIPO =input('ingrese tipo')
-print ('usted quiere, ' + tipo)
+print ('usted quiere, ' + TIPO)
 CANTIDAD = input('ingrese cantidad')
-print ('usted quiere, ' + cantidad)
+print ('usted quiere, ' + CANTIDAD)
 
 #VARUSUARIO
 #variableUsuario
@@ -40,3 +40,24 @@ print(wb.sheetnames)
 
 "import" 
 ws = wb.get_sheet_byname(name = 'emails-clientes')
+
+
+while True:
+        MARCA = input('ingrese marca')
+        if MARCA != "suavestar":
+            print ( "Pone una marca valida")
+        else:
+            print ("Genial")
+            break
+        continue
+
+while True:
+        MEDIDAS = int (input('ingrese medidas') )
+        if  MEDIDAS != "2 PLAZAS ½":
+            print ("elija una medida valida")
+        else:
+            print ("Bien")
+            break
+        continue
+    
+   
