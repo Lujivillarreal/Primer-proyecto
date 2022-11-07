@@ -42,10 +42,13 @@ print(wb.sheetnames)
 ws = wb.get_sheet_byname(name = 'emails-clientes')
 
 
+
+
+
 while True:
-        MARCA = input('ingrese marca')
+        MARCA = int(input('ingrese marca'))
         if MARCA != "suavestar":
-            print ( "Pone una marca valida")
+            print( "Pone una marca valida")
         else:
             print ("Genial")
             break
@@ -53,11 +56,19 @@ while True:
 
 while True:
         MEDIDAS = int (input('ingrese medidas') )
-        if  MEDIDAS != "2 PLAZAS ½":
+        if  MEDIDAS!="2 PLAZAS ½":
             print ("elija una medida valida")
         else:
             print ("Bien")
             break
         continue
     
+    while True:
+        TIPO = int (input('ingrese tipo') )
+        if  TIPO!="2 PLAZAS ½":
+            print ("elija una medida valida")
+        else:
+            print ("Bien")
+            break
+        continue
    
