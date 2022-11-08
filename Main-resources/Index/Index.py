@@ -45,7 +45,7 @@ ws = wb.get_sheet_byname(name = 'emails-clientes')
 
 while True:
         MARCA = input('ingrese marca')
-        if MARCA != "CANNON","PIERO","SIMMONS","KING KOIL" ,  "INDUCOL", "SERTA", "BEDTIME", "TELGO", "SEALY", "SUAVESTAR":
+        if MARCA != "CANNON":
             print( "Pone una marca valida")
         else:
             print ("Genial")
@@ -54,7 +54,7 @@ while True:
 
 while True:
         MEDIDAS = int (input('ingrese medidas') )
-        if  MEDIDAS!="1 PLAZA ", "1 PLZA ½", "2 PLAZAS " ," 2 PLAZAS ½"
+        if  MEDIDAS!="1 PLAZA " :
             print ("elija una medida valida")
         else:
             print ("Bien")
@@ -63,7 +63,7 @@ while True:
     
 while True:
         CANTIDAD = int (input('ingrese tipo')) 
-        if  CANTIDAD!="700-10.000", "10.000 A 15.000", "MAS DE 15.000"
+        if  CANTIDAD!="700-10.000" :
             print ("elija una cantidad valida")
         else:
             print ("Bien")
@@ -72,7 +72,7 @@ while True:
 
 while True:
         TIPO = input('ingrese tipo') 
-        if  TIPO!="RESORTES", "ESPUMA"
+        if  TIPO!="RESORTES":
             print ("elija un tipo valido")
         else:
             print ("Bien")
@@ -82,7 +82,7 @@ while True:
   
 while True:
         PRECIO = int (input('ingrese precio') )
-        if PRECIO!= "40.000 A 70.000", "70.000 A 100.000", "MAS DE 100.000"
+        if PRECIO!= "40.000 A 70.000":
          print ("elija un precio valido")
         else:
             print ("Bien")
