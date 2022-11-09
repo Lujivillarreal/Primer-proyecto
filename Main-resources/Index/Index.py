@@ -7,8 +7,6 @@
 # devolper: Villarreal Maria Lujan
 ###############################################
 
-
-
 #main-recurces
 MARCA = "CANNON", "PIERO", "SIMMONS", "KING KOIL",  "INDUCOL", "SERTA", "BEDTIME", "TELGO", "SEALY", "SUAVESTAR"
 MEDIDAS ="1 PLAZA ", "1 PLZA ½", "2 PLAZAS "," 2 PLAZAS ½"
@@ -17,31 +15,17 @@ CANTIDAD = "700-10.000", "10.000 A 15.000", "MAS DE 15.000"
 PRECIO = "40.000 A 70.000", "70.000 A 100.000", "MAS DE 100.000"
 
 #index
-MARCA = input('ingrese marca')
-print ('usted quiere, ' + MARCA)
-MEDIDAS= input('ingrese medidas')
+#MARCA = input('ingrese marca')
+#print ('usted quiere, ' + MARCA)
+
+#MEDIDAS= input('ingrese medidas')
 print ('usted quiere, ' + MEDIDAS)
-TIPO =input('ingrese tipo')
+
+#TIPO =input('ingrese tipo')
 print ('usted quiere, ' + TIPO)
-CANTIDAD = input('ingrese cantidad')
+
+#CANTIDAD = input('ingrese cantidad')
 print ('usted quiere, ' + CANTIDAD)
-
-#VARUSUARIO
-#variableUsuario
-
-#definimos la forma de importacion
-from csv import excel
-import openpyxl
-
-#definimos la ubicación del archivo
-wb = openpyxl.load_workbook("/C:\Desarrollo\vigilante-aventura\excel.xlsx")
-
-print(wb.sheetnames)
-
-"import" 
-ws = wb.get_sheet_byname(name = 'emails-clientes')
-
-
 
 while True:
         MARCA = input('ingrese marca')
@@ -63,7 +47,7 @@ while True:
     
 while True:
         CANTIDAD = int (input('ingrese tipo')) 
-        if  CANTIDAD!="700-10.000" :
+        if  CANTIDAD!="700-10.000":
             print ("elija una cantidad valida")
         else:
             print ("Bien")
@@ -88,5 +72,25 @@ while True:
             print ("Bien")
             break
         continue
+
+
+#VARUSUARIO
+#variableUsuario
+
+#definimos la forma de importacion
+from csv import excel
+import openpyxl
+
+#definimos la ubicación del archivo
+wb = openpyxl.load_workbook("/C:\Desarrollo\vigilante-aventura\excel.xlsx")
+
+print(wb.sheetnames)
+
+"import" 
+ws = wb.get_sheet_byname(name = 'emails-clientes')
+
+
+
+
 
    
