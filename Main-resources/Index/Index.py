@@ -7,6 +7,13 @@
 # devolper: Villarreal Maria Lujan
 ###############################################
 
+from ast import While
+from cgitb import reset
+from operator import concat
+from tkinter import N, Y
+import calendario_prueba
+
+
 #main-recurces
 MARCA = "CANNON", "PIERO", "SIMMONS", "KING KOIL",  "INDUCOL", "SERTA", "BEDTIME", "TELGO", "SEALY", "SUAVESTAR"
 MEDIDAS ="1 PLAZA ", "1 PLZA ½", "2 PLAZAS "," 2 PLAZAS ½"
@@ -15,16 +22,16 @@ CANTIDAD = "700-10.000", "10.000 A 15.000", "MAS DE 15.000"
 PRECIO = "40.000 A 70.000", "70.000 A 100.000", "MAS DE 100.000"
 
 #index
-#MARCA = input('ingrese marca')
-#print ('usted quiere, ' + MARCA)
+MARCA = input('ingrese marca')
+print ('usted quiere, ' + MARCA)
 
-#MEDIDAS= input('ingrese medidas')
+MEDIDAS= input('ingrese medidas')
 print ('usted quiere, ' + MEDIDAS)
 
-#TIPO =input('ingrese tipo')
+TIPO =input('ingrese tipo')
 print ('usted quiere, ' + TIPO)
 
-#CANTIDAD = input('ingrese cantidad')
+CANTIDAD = input('ingrese cantidad')
 print ('usted quiere, ' + CANTIDAD)
 
 while True:
